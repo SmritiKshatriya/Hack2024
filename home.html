@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-body">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="left">
+        <div class="logo">f</div>
+        <input id="search" class="search" type="text" placeholder="Search SimpleBook" />
+      </div>
+      <nav class="center">
+        <button class="nav-btn active" title="Home">🏠</button>
+        <button class="nav-btn" title="Watch">▶️</button>
+        <button class="nav-btn" title="Marketplace">🛒</button>
+        <button class="nav-btn" title="Groups">👥</button>
+        <button class="nav-btn" title="Gaming">🎮</button>
+      </nav>
+      <div class="right">
+        <button class="icon-btn" title="Menu">☰</button>
+        <button class="icon-btn" title="Messenger">💬</button>
+        <button class="icon-btn" title="Notifications">🔔</button>
+        <button id="logoutBtn" class="icon-btn" title="Account">🚪</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar left">
+      <a class="side-link">👤 Your profile</a>
+      <a class="side-link">🧑‍🤝‍🧑 Friends</a>
+      <a class="side-link">💬 Messenger</a>
+      <a class="side-link">🛒 Marketplace</a>
+      <a class="side-link">🎥 Watch</a>
+      <a class="side-link">🧑‍🤝‍🧑 Groups</a>
+      <hr />
+      <a class="side-link">🌧️ Weather</a>
+      <a class="side-link">📝 Saved</a>
+    </aside>
+
+    <section class="feed">
+      <div class="create-post card">
+        <div class="row">
+          <div class="avatar">U</div>
+          <input class="post-input" placeholder="What's on your mind?" />
+        </div>
+        <div class="row actions">
+          <button class="pill">🎥 Live video</button>
+          <button class="pill">📷 Photo/video</button>
+          <button class="pill">😊 Feeling/activity</button>
+        </div>
+      </div>
+
+      <div class="stories">
+        <div class="story card">Story 1</div>
+        <div class="story card">Story 2</div>
+        <div class="story card">Story 3</div>
+        <div class="story card">Story 4</div>
+      </div>
+
+      <div id="feedItems">
+        <!-- Posts will be injected here by JS -->
+      </div>
+    </section>
+
+    <aside class="sidebar right">
+      <div class="card contacts">
+        <div class="card-title">Contacts</div>
+        <div class="contact">🟢 Alex</div>
+        <div class="contact">🟢 Jamie</div>
+        <div class="contact">🟢 Taylor</div>
+        <div class="contact">🟢 Casey</div>
+      </div>
+      <div class="card shortcuts">
+        <div class="card-title">Sponsored</div>
+        <div class="sponsored">Ad content</div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    window.__APP_CONFIG__ = { requireAuth: true };
+  </script>
+</body>
+</html>
+
